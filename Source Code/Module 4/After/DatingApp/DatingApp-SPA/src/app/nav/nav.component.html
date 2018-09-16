@@ -28,6 +28,9 @@
     </div>
   </div>
 
+  <!-- angular form 
+  #loginForm = ngForm
+  -->
   <form *ngIf="!loggedIn()" #loginForm="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="login()">
     <input class="form-control mr-sm-2" type="text" name="username" 
       placeholder="Username" required [(ngModel)]="model.username">
